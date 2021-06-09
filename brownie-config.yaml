@@ -1,0 +1,10 @@
+dotenv: .env
+networks:
+  default: development
+  development:
+    verify: False
+  rinkeby:
+    verify: True
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_mnemonic: ${MNEMONIC}
