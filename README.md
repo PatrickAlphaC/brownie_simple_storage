@@ -43,6 +43,12 @@ To set your environment variable. You can check you've done it correctly with:
 ```bash
 echo $WEB3_INFURA_PROJECT_ID
 ```
+Change the `deploy_simple_storage` function in `deploy.py` to look like:
+```
+account = accounts.add(config["wallets"]["from_key"])
+# account = accounts.load("id")
+# account = accounts[0]
+```
 
 Then run:
 ```

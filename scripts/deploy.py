@@ -4,7 +4,7 @@ from brownie import SimpleStorage, accounts, config, network
 def deploy_simple_storage():
     # account = accounts.add(config["wallets"]["from_key"])
     # account = accounts.load("id")
-    # account = accounts[0]
+    account = accounts[0]
     simple_storage = SimpleStorage.deploy(
         {"from": account},
         publish_source=config["networks"][network.show_active()].get("verify"),
