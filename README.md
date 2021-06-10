@@ -1,9 +1,22 @@
-1. Clone this
+1. Install Brownie
+
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+# restart your terminal
+pipx install eth-brownie
+```
+Or, if that doesn't work, via pip
+```bash
+pip install eth-brownie
+```
+
+2. Clone this
 ```bash
 git clone https://github.com/PatrickAlphaC/brownie_simple_storage
 cd brownie_simple_storage
 ```
-2. Add your metamask to the brownie accounts at the `0` index
+3. Add your metamask to the brownie accounts at the `0` index
 
 ```bash
 brownie accounts new 0
@@ -21,19 +34,19 @@ and comment the line:
 account = accounts[0]
 ```
 
-3. Testing
+4. Testing
 
 ```bash
 brownie run test
 ```
 
-4. Running scripts
+5. Running scripts
 
 ```bash
 brownie run scripts/deploy.py
 ```
 
-5. Deploy to a testnet
+6. Deploy to a testnet
 
 Add your `WEB3_INFURA_PROJECT_ID` from [Infura](https://infura.io/) to your `.env` and run 
 ```bash
