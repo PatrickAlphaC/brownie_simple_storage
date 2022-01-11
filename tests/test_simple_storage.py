@@ -18,6 +18,7 @@ def test_updating_storage():
     simple_storage = SimpleStorage.deploy({"from": account})
     # Act
     expected = 15
-    simple_storage.store(expected, {"from": account})
+    txn = simple_storage.store(expected, {"from": account})
+    txn.wait(1)
     # Assert
     assert expected == simple_storage.retrieve()
