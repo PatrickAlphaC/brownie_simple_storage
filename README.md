@@ -37,7 +37,7 @@ account = accounts[0]
 4. Testing
 
 ```bash
-brownie run test
+brownie test
 ```
 
 5. Running scripts
