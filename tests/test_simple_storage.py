@@ -1,5 +1,5 @@
 from brownie import SimpleStorage, accounts
-
+import brownie.network as network
 
 def test_deploy():
     # Arrange
