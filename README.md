@@ -65,7 +65,7 @@ account = accounts.add(config["wallets"]["from_key"])
 
 Then run:
 ```
-brownie run scripts/deploy.py --network rinkeby
+brownie run scripts/deploy.py --network goerli
 ```
 
 Make sure you have some testnet ETH. You can find faucets in the [Chainlink Documenatation](https://docs.chain.link/docs/link-token-contracts/)
